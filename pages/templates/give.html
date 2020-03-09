@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Give || GHBC{% endblock %}
+
+{% block container %}
+<!-- ================= inner header =================== -->
+<div class="cover bg-center vh-75 relative-l" style="background-image: url('/static/img/offering.jpg');">
+    <div class="ph2 ph5-l vh-75 flex">
+        <div class="flex items-center justify-end flex-column">
+            <h1 class="f1 fw8 white">We embrace irrational generosity.</h1>
+            <h3 class="f3 fw7 white mw7-l">
+                2 Corinthians 9:6, But this [I say], He which soweth sparingly shall reap also sparingly; and he which soweth bountifully shall reap also bountifully.
+            </h3>
+            <h5 class="washed-blue f4">We know it changes lives—ours and the people we’re reaching. At GHBC, taking action on your generosity is simple.</h5>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== tithing div ====================== -->
+<div class="w-100 ph3 ph5-l tc pv2 pv3-l">
+    <div class="w-80-m w-60-l dib-ns black-80">
+        <h2 class="f4 f3-ns fw6 mv2">Tithes and Offering</h2>
+        <p>
+            The Bible teaches us a baseline standard for giving which includes, tithes, offering, seed faith etc. 
+            When we give the first 10% of our income to the church, we put God first in our lives. 
+            Giving to God is an act of worship that expresses our gratitude, faith, and love for Him,
+            giving to humanity is an expression of our love for God towards them.
+        </p>
+    </div>
+</div>
+
+<!-- ===================== container div ========================== -->
+
+<div class="w-100 ph3 ph5-l tc pv2 pv3-l">
+    <div class="w-100 flex-ns flex-column-ns br3 shadow-2">
+        <div class="flex-ns">
+            <article class="center pa2 br3 v-top">
+                <div class="bg-white br3 shadow-2">
+                    <img src="{% static 'img/giving01.jpg' %}" alt="Restoration and Reliefs" title="Supports and Reliefs" class="w-100 cover" />
+                </div>
+            </article>
+            <article class="tl pa2 br3 v-top">
+                <div class="bg-white black-80">
+                    <div class="pa2 h3">
+                        <h3 class="f3 ma0">Welfare &amp; Reliefs Packages</h3>
+                    </div>
+                    <div  class="h5-l">
+                        <h4 class="ph2 pb2 h3-l fw1">
+                            Sharing the love of Christ means bringing help and hope to people in need. 
+                            GHBC does this by partnering with communities, organizations and local churches
+                            to bring relief materials to the needy and less priviledge. 
+                            
+                        </h4>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="w-100 flex-ns flex-column-ns">
+            <div class="flex-ns h6">
+                <article class="center pa2 br3 v-top">
+                    <div class="bg-white black-80">
+                        <div class="pa2 h3">
+                            <h3 class="f3 ma0">Crusades and Missions</h3>
+                        </div>
+                        <div  class="h5-l">
+                            <h4 class="ph2 pb2 h3-l fw1">
+                                At GHBC, we will do anything short of sin to spread God's truth and love 
+                                around the world. We spread the Gospel via Crusades and Missions outreaches
+                                both locally and internationally. Also, by leveraging technology, we are able
+                                to bring the gospel to you.
+                            </h4>
+                        </div>
+                    </div>
+                </article>
+                <article class="tl pa2 br3 v-top">
+                        <div class="bg-white br3 shadow-2">
+                                <img src="{% static 'img/crusade02.jpg' %}" alt="Crusades" title="Evangelism" class="w-100" />
+                            </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= -->
+    <div class="tc">
+        <p>
+            <h3>Mission Projects Account</h3>
+            <h5 class="f4 fw3 mv2">Account Name: <small>Great Harvest Bible Church</small></h5>
+            <h5 class="f4 fw3 mv2">Account Number: <small>1018083344</small></h5>
+            <h5 class="f4 fw3 mv2">Bank: <small>UBA</small></h5>
+        </p>
+        <p>
+            <h3>Church Account <span class="f4 fw4"> (Tithes/Offering/Seed)</span></h3>
+            <h5 class="f4 fw3 mv2">Account Name: <small>Great Harvest Bible Church</small></h5>
+            <h5 class="f4 fw3 mv2">Account Number: <small>1012762968</small></h5>
+            <h5 class="f4 fw3 mv2">Bank: <small>Zenith Bank</small></h5>
+        </p>
+    </div>
+</div>
+{% endblock %}

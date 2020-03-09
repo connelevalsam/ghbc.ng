@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Children of the Upper Room || GHBC{% endblock %}
+
+{% block container %}
+<!-- ================= inner header =================== -->
+<div class="cover bg-center vh-75 relative-l" style="background-image: url('/static/img/kids_Church.JPG');">
+    <div class="ph2 ph5-l vh-75 flex flex-column">
+        <div class="flex items-center justify-center flex-auto flex-column">
+            <h1 class="f1 fw8 white">Let the kids know Christ!</h1>
+        </div>
+        <div class="flex flex-column items-center"><a href="#messages" class="link pointer pv2 bg-hot-pink white know-more bounce">Know More</a></div>
+    </div>
+</div>
+
+<!-- ==================== messages div ====================== -->
+<div class="w-100 ph3 ph5-l tc pv2 pv4-l">
+    <div class="w-40-l dib-l black-80 v-top ph3" id="messages">
+        <h2 class="f3 f1-ns fw6 mv2">Leading the next Generation</h2>
+        <h3 class="f4 f2-ns fw6">Kids are God's Gifts</h3>
+        <p >
+            Child physical, mental and <b>spiritual</b> growths shouldn't be left out 
+            in the life of a Child.
+        </p>
+    </div><!-- right div --><div class="w-60-l dib-l black-80 v-top">
+        <div class="w-100">
+            <a href="{% url 'kids1' %}" class="db pointer link">
+                <img src="{% static 'img/kid01.jpg' %}" title="last Sunday's message">
+            </a>
+            <div class="overflow-x-scroll nowrap ws-normal">
+                <article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="{% url 'kids4' %}"  class="db link pointer">
+                            <img src="{% static 'img/kid02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="{% url 'kids4' %}" class="db link pointer f6 f5-ns black-80">
+                            3. THE GOOD SHEPHERD
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="{% url 'kids3' %}"  class="db link pointer">
+                            <img src="{% static 'img/kid05.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="{% url 'kids3' %}" class="db link pointer f6 f5-ns black-80">
+                            2. EVERLASTING FATHER
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="{% url 'kids2' %}"  class="db link pointer">
+                            <img src="{% static 'img/kid04.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="{% url 'kids2' %}" class="db link pointer f6 f5-ns black-80">
+                            1. TRUSTING GOD
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===================== playlist div ========================== -->
+<div class="w-100 ph3 ph5-l pv3 playlist">
+    <div class="w-100">
+        <div class="">
+            <div class="tr">
+                <h2 class="f3 f1-ns fw6 mv2 dib white">Worship with us</h1>
+            </div>
+        </div>
+        <div class="overflow-x-scroll overflow-x-hidden-l nowrap ws-normal w-60-m w-80-l pv3-ns">
+            <article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="mv3 br3 br--bottom-l shadow-4">
+                    <a href="#0"  class="db link pointer">
+                        <img src="{% static 'img/kids05.JPG' %}" class="br3 br--top-l">
+                    </a>
+                </div>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="mv3 br3 br--bottom-l shadow-4">
+                    <a href="#0"  class="db link pointer">
+                        <img src="{% static 'img/kids04.jpg' %}" class="br3 br--top-l">
+                    </a>
+                </div>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="mv3 br3 br--bottom-l shadow-4">
+                    <a href="#0"  class="db link pointer">
+                        <img src="{% static 'img/kids06.JPG' %}" class="br3 br--top-l">
+                    </a>
+                </div>
+            </article>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="mv3 br3 br--bottom-l shadow-4">
+                    <a href="#0"  class="db link pointer">
+                        <img src="{% static 'img/kids07.JPG' %}" class="br3 br--top-l">
+                    </a>
+                </div>
+            </article>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="mv3 br3 br--bottom-l shadow-4">
+                    <a href="#0"  class="db link pointer">
+                        <img src="{% static 'img/kids08.JPG' %}" class="br3 br--top-l">
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== leadership ======================= -->
+<div class="w-100 ph3 ph5-l pv3">
+    <img src="{% static 'img/kids_leaders.jpg' %}" alt="" class="bg-center">
+</div>
+<!-- ==================== stories div ====================== -->
+<div class="w-100 ph3 ph5-l pv3 stories">
+    <div class="w-100">
+        <div class="">
+            <div class="">
+                <h2 class="f3 f1-ns fw6 mv2 dib black-80">Stories</h1>
+            </div>
+        </div>
+        <div class="overflow-x-scroll nowrap ws-normal">
+            <article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                    <a href="{% url 'kidstry1' %}"  class="db link pointer">
+                        <img src="{% static 'img/kid03.jpg' %}" class="br3 br--top-l">
+                    </a>
+                    <a href="{% url 'kidstry1' %}" class="db link pointer f6 f5-ns black-80">
+                        THE DREAMER
+                    </a>
+                </div>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                    <a href="{% url 'kidstry2' %}"  class="db link pointer">
+                        <img src="{% static 'img/kids02.jpg' %}" class="br3 br--top-l">
+                    </a>
+                    <a href="{% url 'kidstry2' %}" class="db link pointer f6 f5-ns black-80">
+                        LITTLE SAMUEL
+                    </a>
+                </div>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                    <a href="{% url 'kidstry3' %}"  class="db link pointer">
+                        <img src="{% static 'img/kids01.jpg' %}" class="br3 br--top-l">
+                    </a>
+                    <a href="{% url 'kidstry3' %}" class="db link pointer f6 f5-ns black-80">
+                        ABRAHAM FOLLOWS GOD
+                    </a>
+                </div>
+            </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                    <a href="{% url 'kidstry4' %}"  class="db link pointer">
+                        <img src="{% static 'img/kid05.jpg' %}" class="br3 br--top-l">
+                    </a>
+                    <a href="{% url 'kidstry4' %}" class="db link pointer f6 f5-ns black-80">
+                        JESUS IS BORN
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+{% endblock %}

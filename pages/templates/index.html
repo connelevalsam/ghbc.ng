@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Welcome || GHBC{% endblock %}
+
+{% block container %}
+    <!-- ================= inner header =================== -->
+    <div class="cover bg-center vh-75 relative-l" style="background-image: url(static/img/leadership02.jpg);">
+        <div class="ph2 ph5-l vh-75 dib dt">
+            <div class="dtc v-base v-mid-ns">
+                <h1 class="f1 fw8 white mb0">Selfless</h1>
+                <p class="measure white f6 f5-ns mt0">
+                    When you serve more, you take less. When you give more, you need less. When you thank more, you want less. When there’s more of God, there will be less of self.
+                </p>
+                <div class="pv4">
+                    <span class="db dib-ns pv2 mv2"><a href="{% url 'store' %}" class="pv2 pv3-ns f4-ns ph3 br-pill bg-blue dim white pointer link">visit store</a></span>
+                    <span class="db dib-ns pv2 mv2"><a href="{% url 'cs' %}" class="pv2 pv3-ns f4-ns ph3 br-pill ba b--near-white bg-transparent hover-bg-white white hover-black-80 pointer link">watch series</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================ info divs ==================== -->
+    <div class="relative-l infoDiv ph2 ph5-l">
+        <article class="db dib-l w-third-l pa1">
+            <div class="bg-white br3 shadow-4">
+                <a href="#0" class="link pointer black-80">
+                    <div class="cf ph1 pt2">
+                        <img src="{% static 'img/leadership01.jpg' %}" class="dib fl w4" alt="podcast">
+                        <h1 class="dib ma0  mw3 mw5-l f4 lh-copy">Leadership Podcast</h1>
+                        <p class="ph1 ma0 f5 lh-copy pt2 h4">
+                            Listen to the latest episode of Apostle Elias Emmanuel Leadership Podcast
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </article><article class="db dib-l w-third-l pa1 v-top-l">
+            <div class="bg-white br3 shadow-4">
+                <a href="{% url 'kids' %}" class="link pointer black-80">
+                    <div class="cf ph1 pt2">
+                        <img src="{% static 'img/for-parents.jpg' %}" class="dib fl w4" alt="podcast">
+                        <h1 class="dib ma0  mw4 mw5-l f4 lh-copy">Kids &amp; Teens Talk</h1>
+                        <p class="ph1 ma0 f5 lh-copy pt2 h4">
+                            Learn how to catch them young for Jesus.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </article><article class="db dib-l w-third-l pa1 v-top-l">
+            <div class="bg-white br3 shadow-4">
+                <a href="#0" class="link pointer black-80">
+                    <div class="cf ph1 pt2">
+                        <img src="{% static 'img/get-help01.jpg' %}" class="dib fl w4" alt="podcast">
+                        <h1 class="dib ma0  mw3 mw5-l f4 lh-copy">Internet</h1>
+                        <p class="ph1 ma0 f5 lh-copy pt2 h4">
+                            Learn how you can use the Internet to reach out to your generation with the Gospel
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </div>
+
+    <!-- ==================== belifes div ====================== -->
+    <div class="w-100 ph3 ph5-l tc pv2 pv3-l">
+        <div class="w-80-m w-60-l dib-ns black-80">
+            <h2 class="f4 f1-ns fw6 mv2">We believe God is able, no matter what!</h2>
+            <p>
+                God is ever faithful and loving! He knows your needs even before you ask.
+                He can solve any problem you have and can meet you at the point of your needs.
+                According to Jeremiah 32:27.
+                We totally believe God is able!
+            </p>
+            <span class="db dib-ns pv2 mv2"><a href="{% url 'wwa' %}#mission" class="pv2 ph3 br-pill bg-blue dim white pointer link">Read More</a></span>
+        </div>
+    </div>
+
+    <!-- ===================== welcome div ========================== -->
+    <div class="w-100 ph3 ph5-l tc cover bg-center vh-50 pv2 pv4-l flex flex-column"
+    style="background-image: url(static/img/open_doors.jpg);">
+        <div class="w-80-m w-60-l dib-ns flex items-center justify-center flex-auto flex-column white" style="background:rgba(4, 4, 31, 0.5);">
+            <h2 class="f3 f1-ns fw6 mv2">You're Welcome Here!</h2>
+            <p class="mv2 pv2">
+                we celebrate your presence and will be most delighted to have you join our family
+                as a member or friend. The ministers do not have the physical ability to change your 
+                life, but we know someone who does, our Lord and Savior Jesus-Chris. We would love to 
+                share Him with you, your family, and your friends. You can always expect to be welcomed,
+                    uplifted, and rejuvenated through our Spirit-filled services. 
+            </p>
+            <span class="pv2 mv2"><a href="{% url 'wte' %}" class="pa3 br-pill ba b--near-white bg-transparent hover-bg-white white hover-black-80 pointer link">Learn More</a></span>
+        </div>
+    </div>
+
+    <!-- ==================== need prayers div ====================== -->
+    <div class="w-100 ph3 ph5-l tc pv2 pv4-l">
+        <div class="w-80-m w-60-l dib-ns black-80">
+            <h2 class="f1 fw6 mv2">Need Prayer?</h2>
+            <p>
+                For Prayers or Counselling...
+            </p>
+            <span class="db dib-ns pv2 mv2"><a href="{% url 'contact' %}" class="pv2 ph3 br-pill bg-yellow dim white pointer link">Ask for Prayer</a></span>
+        </div>
+    </div>
+{% endblock %}

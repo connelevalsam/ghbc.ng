@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}What to Expect || GHBC{% endblock %}
+
+{% block container %}
+<!-- ================= inner header =================== -->
+<div class="cover bg-center vh-75 relative-l" style="background-image: url('/static/img/welcome01.jpg');">
+    <div class="ph2 ph5-l vh-75 flex flex-column">
+        <div class="flex items-center justify-center flex-auto flex-column">
+            <h1 class="f1 fw8 white">You’re welcome here.</h1>
+        </div>
+        <div class="flex flex-column items-center"><a href="#expect" class="link pointer pv2 white know-more bounce">Learn More</a></div>
+    </div>
+</div>
+
+
+<!-- ===================== container div ========================== -->
+
+<div class="w-100 ph3 ph5-l tc pv2 pv3-l">
+
+    <!-- ==================== what to expect div ====================== -->
+    <div class="w-80-m w-60-l dib-ns black-80" id="expect">
+        <h2 class="f4 f3-ns fw6 mv2">What to expect at Great Harvest Bible Church?</h2>
+        <p>
+            At GHBC, you'll be welcomed into a friendly, casual environment by people who are excited to see you. We want you to have an idea of what to expect when you arrive at GHBC. All you have to do from here is come as you are and find out more for yourself.
+        </p>
+    </div>
+
+    <!-- ====================== services div ========================== -->
+    <div class="w-80-m w-60-l dib-ns ph1 ph3-ns black-80">
+        <h2 class="f4 f3-ns fw6 mv2">At a weekly service, you can expect:</h2>
+        <ul class="tl">
+            <li>Each service to last two hours.</li>
+            <li>Thought-provoking and engaging <a class="link pointer" href="{% url 'media' %}">messages</a> based on the Bible.</li>
+            <li>Teaching from Senior Pastor Apostle Elias Emmanue or a GHBC pastor.</li>
+            <li>Soul-out worship music.</li>
+        </ul>
+        <h3 class="f6 f5-ns fw6 mv2">
+            GHBC offers you abundant harvest as you avail yourself the opportunity
+            of attending the following meeting;
+        </h3>
+        <div class="tc">
+            <table class="dib tl">
+                <tr>
+                    <th>
+                        Disclipleship class
+                    </th>
+                    <td>Monday by 5:00PM</td>
+                </tr>
+                <tr>
+                    <th>
+                        Expository Bible Study
+                    </th>
+                    <td>Tuesday by 5:00PM</td>
+                </tr>
+                <tr>
+                    <th>
+                        Healing and Prophetic Service
+                    </th>
+                    <td>Thursday by 5:00PM</td>
+                </tr>
+                <tr>
+                    <th>
+                        Sunday Worship Service
+                    </th>
+                    <td>Sunday by 8:00AM</td>
+                </tr>
+                <tr>
+                    <th>
+                        Vigil holds last Friday
+                    </th>
+                    <td>10:00PM - 4:00AM<br /> Monthly</td>
+                </tr>
+                <tr>
+                    <th>
+                        Counseling and Deliverance
+                    </th>
+                    <td>Mondays - Fridays<br />
+                        10:00PM - 4:00PM Daily
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ====================== next step div ========================== -->
+    <div class="w-80-m w-60-l dib-ns ph1 ph3-ns black-80">
+        <h2 class="f4 f3-ns fw6 mv2">Find your personal next step:</h2>
+        <ul class="tl">
+            <li><b>A place to belong.</b> LifeTeams are the people you can laugh, grow, and serve with. We have teams for men, women, youths, singers, and more!</li>
+            <li><b>A way to grow.</b> We want to equip you with the tools to develop and explore as a fully devoted follower of Christ. As an individual, family, or part of a LifeTeam, you can visit the Media for resources to keep learning.</li>
+            <li><b>A chance to make a difference.</b> God created you with a purpose and gave you gifts and skills that you can use to change lives in your area and the world. Serve at GHBC or connect with one of our Missions partners to get started.</li>
+        </ul>
+    </div>
+
+    <!-- ====================== what you get div ========================== -->
+    <div class="w-80-m w-60-l dib-ns ph1 ph3-ns black-80">
+        <h2 class="f4 f3-ns fw6 mv2">Your family will enjoy:</h2>
+        <ul class="tl">
+            <li><b>A place just for kids.</b> Every Sunday, kids and newborns (including primary school pupils), learn the truth about who God is and who they are because of Him through basic foundational lessons, small groups, and trusted adult leadership.</li>
+            <li><b>An Evening just for teens.</b> Teens meets twice a month on chosen Saturdays. It is for those between 13 - 19 years. Loaded with fast-paced worship and interactive activities, it addresses real life issues teens face each day.</li>
+        </ul>
+    </div>
+
+    <!-- ====================== ninvitation div ========================== -->
+    <div class="w-80-m w-60-l dib-ns ph1 ph3-ns black-80">
+        <h2 class="f4 f3-ns fw6 mv2">Your whole family is invited.</h2>
+        <h5>We are one church meeting in one location. Moms, dads, and children of every age can find something to love about Great Harvest Bible Church!</h5>
+        <!-- our location link -->
+        <span class="db mv4"><a href="contact.html" class="pv2 f4-ns ph6 br-pill ba bg-white hover-bg-blue blue hover-white pointer link">Find Us</a></span>
+    </div>
+</div>
+{% endblock %}

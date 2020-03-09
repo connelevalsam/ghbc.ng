@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Welcome || GHBC{% endblock %}
+
+{% block container %}
+<!-- ================= container =================== -->
+<div class="w-100 flex flex-column bg-light-gray">
+        <!-- ================= item 1 =================== -->
+        <div class="pa2 pa3-m pa4-l flex-ns">
+            <div class="w-100 w-30-ns dib-ns tc br2-l shadow-2">
+                <h3 class="lh-title">How to Discover You</h3>
+                <img src="{% static 'img/APOSTLE EMMANUEL ELIAS.jpg' %}" alt="Book cover" class="w5">
+                <h4 class="lh-copy black-60">3,000.00 Naira/copy</h4>
+            </div>
+            <div class="w-100 w-70-ns dib-ns br2-l shadow-2 v-top">
+                <blockquote class="">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fugit tempora ullam eveniet, eaque voluptate beatae delectus
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fugit tempora ullam eveniet, eaque voluptate beatae delectus
+                    <p>
+                        <a href="contact.html" class="blue fw5 pointer">Contact GHBC</a>
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- ================= item 2 =================== -->
+        <div class="pa2 pa3-m pa4-l flex-ns">
+                <div class="w-100 w-30-ns dib-ns tc br2-l shadow-2">
+                    <h3 class="lh-title">Glorious Church</h3>
+                    <img src="{% static 'img/APOSTLE EMMANUEL ELIAS.jpg' %}" alt="Book cover" class="w5">
+                    <h4 class="lh-copy black-60">3,500.00 Naira/copy</h4>
+                </div>
+                <div class="w-100 w-70-ns dib-ns br2-l shadow-2 v-top">
+                    <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Fugit tempora ullam eveniet, eaque voluptate beatae delectus
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Fugit tempora ullam eveniet, eaque voluptate beatae delectus
+                        <p>
+                            <a href="contact.html" class="blue fw5 pointer">Contact GHBC</a>
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/tachyons.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body class="w-100">
+	<main class="w-100">
+		<header>
+			<nav class="flex justify-between h3">
+				<div class="pv2 pv3 ph5-l flex items-center">
+					<a href="{% url 'home' %}" class="link pointer">
+						<img src="{% static 'img/logo.png' %}" class="cover h2 mh2">
+					</a>
+				</div>
+				<div class="pv2 pv3-ns ph5-l bg-white flex-l items-center h-100 h-inherit-l fixed relative-l top-0 right-0 transition-transform transform-off bn-l navbar">
+					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'media' %}">media</a>
+					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'give' %}">give</a>
+					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'wwa' %}">who we are</a>
+					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'kids' %}">Kids Church</a>
+				</div>
+				<div class="flex pa3 items-center transition-transform dn-l hamburger pointer">
+					<a class="f4 link dib black mr3 mr4-ns" href="#"><img src="{% static 'img/hamburger.svg' %}" class="dib" style="max-width: 50%; outline: none;"></a>
+				</div>
+			</nav>
+		</header>
+		<section class="w-100 contents">
+
+			{% block container %} {% endblock %}
+				
+		</section>
+
+		<!-- ========================== footer ============================ -->
+		<footer>
+			<div class="ph3 ph5-l pv2 pv4-l tc-ns">
+				<div class="db dib-l w-50-l">
+					<span class="db dib-m mb3">&copy; 2019 GHBC. All rights reserved.</span>
+					<span class="br b-black-20 pa2">
+						<a href="" class="link blue f6 fw1">Privacy Policy</a>
+					</span>
+					<span class="pa2">
+						<a href="" class="link blue f6 fw1">Terms of Use</a>
+					</span>
+				</div><div class="dn db-m dib-l w-50-l">
+					<div class="pv2">
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="media.html">media</a>
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="give.html">give</a>
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="who-we-are.html">who we are</a>
+					</div>
+					<div>
+						Follow us on<br />
+						<a class="link dim white dib h2 w2 br-100 mr3 pa2 bg-blue ba b--black-10" href="#" title="">
+							<svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+							  <title>facebook icon</title>
+							  <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>
+							</svg>
+						  </a>
+						  <a class="link dim white dib h2 w2 br-100 mr3 pa2 bg-blue ba b--black-10" href="#" title="">
+							<svg data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+							  <title>twitter icon</title>
+							  <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+							</svg>
+						  </a>
+						  <a class="link dim white dib br-100 h2 w2 mr3 pa2 bg-blue ba b--black-10" href="#" title="">
+							<svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+							  <title>github icon</title>
+							  <path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+							</svg>
+						  </a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Media || GHBC{% endblock %}
+
+{% block container %}
+    <!-- ================= inner header =================== -->
+    <div class="cover bg-center vh-75 relative-l" style="background-image: url('/static/img/media02.jpg');">
+        <div class="ph2 ph5-l vh-75 flex flex-column">
+            <div class="flex items-center justify-center flex-auto flex-column">
+                <h1 class="f1 fw8 white">Get all messages and choir songs</h1>
+            </div>
+            <div class="flex flex-column items-center"><a href="#messages" class="link pointer pv2 white know-more bounce">Know More</a></div>
+        </div>
+    </div>
+
+    <!-- ==================== messages div ====================== -->
+    <div class="w-100 ph3 ph5-l tc pv2 pv4-l" style="background-image: url('/static/img/worship02.jpg');">
+        <div class="w-40-l dib-l white v-top ph3" id="messages">
+            <h2 class="f3 f1-ns fw6 mv2">Messages</h2>
+            <h3 class="f4 f2-ns fw6">Be good at what you do</h3>
+            <p >
+                You can get video or audio messages on different topics.
+                Get insight on the mission work the Church is doing.
+                Follow up on different things happening in GHBC. <br />
+                Visit the Media Team today!
+            </p>
+        </div><!-- right div --><div class="w-60-l dib-l black-80 v-top">
+            <div class="w-100">
+                <a href="#0" class="db pointer link">
+                    <img src="{% static 'img/ghbc.png' %}" title="last Sunday's message">
+                </a>
+                <div class="overflow-x-scroll overflow-hidden-l nowrap ws-normal">
+                    <article class="mr2 dib w-80 w-50-m w-30-l">
+                        <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                            <a href="{% url 'msg01' %}"  class="db link pointer">
+                                <img src="{% static 'img/congregation.jpg' %}" class="br3 br--top-l">
+                            </a>
+                            <a href="{% url 'msg01' %}" class="db link pointer f6 f5-ns black-80">
+                                3. UNPRECEDENTED GRO...
+                            </a>
+                        </div>
+                    </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                        <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                            <a href="{% url 'msg02' %}"  class="db link pointer">
+                                <img src="{% static 'img/listen.jpg' %}" class="br3 br--top-l">
+                            </a>
+                            <a href="{% url 'msg02' %}" class="db link pointer f6 f5-ns black-80">
+                                2. THE GATES OF HELL SH...
+                            </a>
+                        </div>
+                    </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                        <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                            <a href="{% url 'msg03' %}"  class="db link pointer">
+                                <img src="{% static 'img/reading.jpg' %}" class="br3 br--top-l">
+                            </a>
+                            <a href="{% url 'msg03' %}" class="db link pointer f6 f5-ns black-80">
+                                1. THE GODLY WOMAN IN...
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== playlist div ========================== -->
+    <div class="w-100 ph3 ph5-l pv3 choir-playlist">
+        <div class="w-100">
+            <div class="">
+                <div class="">
+                    <h2 class="f3 f1-ns fw6 mv2 dib white">Studies</h1>
+                </div>
+            </div>
+            <div class="overflow-x-scroll nowrap ws-normal">
+                <article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation01.jpg' %}" class="br3 br--top-l">
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation03.jpg' %}" class="br3 br--top-l">
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation04.jpg' %}" class="br3 br--top-l">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== life groups div ====================== -->
+    <div class="w-100 ph3 ph5-l pv3">
+        <div class="w-100">
+            <div class="">
+                <div class="">
+                    <h2 class="f3 f1-ns fw6 mv2 dib black-80">Teachings</h1>
+                </div>
+            </div>
+            <div class="overflow-x-scroll nowrap ws-normal">
+                <article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/listen.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Life of a Believer
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/write01.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Youths Life
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation05.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Benefits of a Man
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-white mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/congregation06.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Receive Power
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== sections div ====================== -->
+    <div class="w-100 ph3 ph5-l pv3 segments">
+        <div class="w-100">
+            <div class="">
+                <div class="">
+                    <h2 class="f3 f1-ns fw6 mv2 dib white">Segments</h1>
+                </div>
+            </div>
+            <div class="overflow-x-scroll nowrap ws-normal">
+                <article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-transparent mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/worship02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Episode 19
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-transparent mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/worship02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Episode 18
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-transparent mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/worship02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Episode 17
+                        </a>
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="bg-transparent mv3 br3 br--bottom-l shadow-4">
+                        <a href="#0"  class="db link pointer">
+                            <img src="{% static 'img/worship02.jpg' %}" class="br3 br--top-l">
+                        </a>
+                        <a href="#0" class="db link pointer f6 f5-ns black-80">
+                            Episode 16
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+{% endblock %}

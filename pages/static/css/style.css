@@ -1,0 +1,99 @@
+html body {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    width: 100%;
+}
+.know-more {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes bounce {
+    0% {-webkit-transform: translateY(30px);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+}
+.give-tags {
+    height: 20%;
+}
+    .give-tags img {
+        height: 50%;
+    }
+.choir-playlist {
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.segments {
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.playlist {
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.stories {
+    background: rgb(248, 26, 111);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(222, 164, 183), rgb(250, 18, 115));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(222, 164, 183),rgb(250, 18, 115)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.upperroom {
+    display: flex;
+    flex-direction: row;
+} .upperroom>div {flex: 1;} .upperroom>article {flex: 1;}
+
+.media {
+    display: flex;
+    flex-direction: row;
+} .media div {flex: 1;} .media article {flex: 1; align-items: center;}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+} .contact>div {flex: 1;} .contact>article {flex: 2;}
+
+.transition-transform { 
+    transition: transform 0.5s ease-in;
+}
+.transform-off { 
+    transform: translate3d( 100%, 0, 0 );
+}
+
+@media screen and (min-width: 60em) {
+    .transform-off { 
+        transform: none; 
+    }
+    .infoDiv {
+        bottom: -70px;
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    .infoDiv {
+        top: -100px;
+    }
+}
+@media screen and (min-device-width: 1200px) {
+    .infoDiv {
+        top: -50px;
+    }
+}
