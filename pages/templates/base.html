@@ -15,7 +15,8 @@
 			<nav class="flex justify-between h3">
 				<div class="pv2 pv3 ph5-l flex items-center">
 					<a href="{% url 'home' %}" class="link pointer">
-						<img src="{% static 'img/logo.png' %}" class="cover h2 mh2">
+						<!-- <img src="{% static 'img/logo.png' %}" class="cover h2 mh2"> -->
+						<h1 class="i sarif blue">GHBC</h1>
 					</a>
 				</div>
 				<div class="pv2 pv3-ns ph5-l bg-white flex-l items-center h-100 h-inherit-l fixed relative-l top-0 right-0 transition-transform transform-off bn-l navbar">
@@ -48,9 +49,9 @@
 					</span>
 				</div><div class="dn db-m dib-l w-50-l">
 					<div class="pv2">
-						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="media.html">media</a>
-						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="give.html">give</a>
-						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="who-we-are.html">who we are</a>
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'media' %}">media</a>
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'give' %}">give</a>
+						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'wwa' %}">who we are</a>
 					</div>
 					<div>
 						Follow us on<br />

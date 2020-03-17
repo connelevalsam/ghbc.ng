@@ -32,7 +32,7 @@
         <h2 class="f4 f3-ns fw6 mv2">At a weekly service, you can expect:</h2>
         <ul class="tl">
             <li>Each service to last two hours.</li>
-            <li>Thought-provoking and engaging <a class="link pointer" href="{% url 'media' %}">messages</a> based on the Bible.</li>
+            <li>Thought-provoking and engaging <a class="pointer" href="{% url 'media' %}">messages</a> based on the Bible.</li>
             <li>Teaching from Senior Pastor Apostle Elias Emmanue or a GHBC pastor.</li>
             <li>Soul-out worship music.</li>
         </ul>
@@ -103,12 +103,12 @@
         </ul>
     </div>
 
-    <!-- ====================== ninvitation div ========================== -->
+    <!-- ====================== invitation div ========================== -->
     <div class="w-80-m w-60-l dib-ns ph1 ph3-ns black-80">
         <h2 class="f4 f3-ns fw6 mv2">Your whole family is invited.</h2>
         <h5>We are one church meeting in one location. Moms, dads, and children of every age can find something to love about Great Harvest Bible Church!</h5>
-        <!-- our location link -->
-        <span class="db mv4"><a href="contact.html" class="pv2 f4-ns ph6 br-pill ba bg-white hover-bg-blue blue hover-white pointer link">Find Us</a></span>
+        <!-- our contact link -->
+        <span class="db mv4"><a href="{% url 'contact' %}" class="pv2 f4-ns ph6 br-pill ba bg-white hover-bg-blue blue hover-white pointer link">Find Us</a></span>
     </div>
 </div>
 {% endblock %}

@@ -5,15 +5,15 @@
 
 {% block container %}
     <!-- ================= inner header =================== -->
-    <div class="cover bg-center vh-75 relative-l" style="background-image: url(static/img/leadership02.jpg);">
+    <div class="cover bg-center vh-100 vh-75-l relative-l" style="background-image: url(static/img/leadership02.jpg);">
         <div class="ph2 ph5-l vh-75 dib dt">
             <div class="dtc v-base v-mid-ns">
                 <h1 class="f1 fw8 white mb0">Selfless</h1>
-                <p class="measure white f6 f5-ns mt0">
+                <p class="measure white f6 f5-ns mt-l">
                     When you serve more, you take less. When you give more, you need less. When you thank more, you want less. When there’s more of God, there will be less of self.
                 </p>
                 <div class="pv4">
-                    <span class="db dib-ns pv2 mv2"><a href="{% url 'store' %}" class="pv2 pv3-ns f4-ns ph3 br-pill bg-blue dim white pointer link">visit store</a></span>
+                    <span class="db dib-ns pv2 mv2"><a href="{% url 'cs' %}" class="pv2 pv3-ns f4-ns ph3 br-pill bg-blue dim white pointer link">visit store</a></span>
                     <span class="db dib-ns pv2 mv2"><a href="{% url 'cs' %}" class="pv2 pv3-ns f4-ns ph3 br-pill ba b--near-white bg-transparent hover-bg-white white hover-black-80 pointer link">watch series</a></span>
                 </div>
             </div>
@@ -24,7 +24,7 @@
     <div class="relative-l infoDiv ph2 ph5-l">
         <article class="db dib-l w-third-l pa1">
             <div class="bg-white br3 shadow-4">
-                <a href="#0" class="link pointer black-80">
+                <a href="{% url 'cs' %}" class="link pointer black-80">
                     <div class="cf ph1 pt2">
                         <img src="{% static 'img/leadership01.jpg' %}" class="dib fl w4" alt="podcast">
                         <h1 class="dib ma0  mw3 mw5-l f4 lh-copy">Leadership Podcast</h1>
@@ -48,7 +48,7 @@
             </div>
         </article><article class="db dib-l w-third-l pa1 v-top-l">
             <div class="bg-white br3 shadow-4">
-                <a href="#0" class="link pointer black-80">
+                <a href="{% url 'cs' %}" class="link pointer black-80">
                     <div class="cf ph1 pt2">
                         <img src="{% static 'img/get-help01.jpg' %}" class="dib fl w4" alt="podcast">
                         <h1 class="dib ma0  mw3 mw5-l f4 lh-copy">Internet</h1>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- ===================== welcome div ========================== -->
-    <div class="w-100 ph3 ph5-l tc cover bg-center vh-50 pv2 pv4-l flex flex-column"
+    <div class="w-100 ph3 ph5-l tc cover bg-center vh-75 vh-50-l pv2 pv4-l flex flex-column"
     style="background-image: url(static/img/open_doors.jpg);">
         <div class="w-80-m w-60-l dib-ns flex items-center justify-center flex-auto flex-column white" style="background:rgba(4, 4, 31, 0.5);">
             <h2 class="f3 f1-ns fw6 mv2">You're Welcome Here!</h2>

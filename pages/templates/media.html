@@ -5,7 +5,7 @@
 
 {% block container %}
     <!-- ================= inner header =================== -->
-    <div class="cover bg-center vh-75 relative-l" style="background-image: url('/static/img/media02.jpg');">
+    <div class="cover bg-center vh-100 vh-75-l relative-l" style="background-image: url('/static/img/media02.jpg');">
         <div class="ph2 ph5-l vh-75 flex flex-column">
             <div class="flex items-center justify-center flex-auto flex-column">
                 <h1 class="f1 fw8 white">Get all messages and choir songs</h1>
@@ -22,8 +22,13 @@
             <p >
                 You can get video or audio messages on different topics.
                 Get insight on the mission work the Church is doing.
-                Follow up on different things happening in GHBC. <br />
-                Visit the Media Team today!
+                Follow up on different things happening in GHBC. 
+                <h5>Visit the Media Team today!</h5>
+                <span class="db mv4">
+                    <a href="{% url 'contact' %}" class="pv2 f4-ns ph2 br-pill ba bg-white hover-bg-blue blue hover-white pointer link">
+                        Or contact us
+                    </a>
+                </span>
             </p>
         </div><!-- right div --><div class="w-60-l dib-l black-80 v-top">
             <div class="w-100">
@@ -67,35 +72,43 @@
     <!-- ===================== playlist div ========================== -->
     <div class="w-100 ph3 ph5-l pv3 choir-playlist">
         <div class="w-100">
-            <div class="">
+            <div class="tr">
                 <div class="">
-                    <h2 class="f3 f1-ns fw6 mv2 dib white">Studies</h1>
+                    <h2 class="f3 f1-ns fw6 mv2 dib white">Join Us</h1>
                 </div>
             </div>
             <div class="overflow-x-scroll nowrap ws-normal">
                 <article class="mr2 dib w-80 w-50-m w-30-l">
                     <div class="mv3 br3 br--bottom-l shadow-4">
-                        <a href="#0"  class="db link pointer">
-                            <img src="{% static 'img/congregation01.jpg' %}" class="br3 br--top-l">
-                        </a>
+                        <img src="{% static 'img/congregation01.jpg' %}" class="br3 br--top-l">
                     </div>
                 </article><article class="mr2 dib w-80 w-50-m w-30-l">
                     <div class="mv3 br3 br--bottom-l shadow-4">
-                        <a href="#0"  class="db link pointer">
-                            <img src="{% static 'img/congregation02.jpg' %}" class="br3 br--top-l">
-                        </a>
+                        <img src="{% static 'img/congregation02.jpg' %}" class="br3 br--top-l">
                     </div>
                 </article><article class="mr2 dib w-80 w-50-m w-30-l">
                     <div class="mv3 br3 br--bottom-l shadow-4">
-                        <a href="#0"  class="db link pointer">
-                            <img src="{% static 'img/congregation03.jpg' %}" class="br3 br--top-l">
-                        </a>
+                        <img src="{% static 'img/congregation03.jpg' %}" class="br3 br--top-l">
                     </div>
                 </article><article class="mr2 dib w-80 w-50-m w-30-l">
                     <div class="mv3 br3 br--bottom-l shadow-4">
-                        <a href="#0"  class="db link pointer">
-                            <img src="{% static 'img/congregation04.jpg' %}" class="br3 br--top-l">
-                        </a>
+                        <img src="{% static 'img/congregation04.jpg' %}" class="br3 br--top-l">
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <img src="{% static 'img/congregation05.jpg' %}" class="br3 br--top-l">
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <img src="{% static 'img/congregation06.jpg' %}" class="br3 br--top-l">
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <img src="{% static 'img/congregation07.jpg' %}" class="br3 br--top-l">
+                    </div>
+                </article><article class="mr2 dib w-80 w-50-m w-30-l">
+                    <div class="mv3 br3 br--bottom-l shadow-4">
+                        <img src="{% static 'img/congregation08.jpg' %}" class="br3 br--top-l">
                     </div>
                 </article>
             </div>
