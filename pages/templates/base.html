@@ -25,7 +25,7 @@
 					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'wwa' %}">who we are</a>
 					<a class="db mb3 mb0-l pa2 pa0-l f6 fw6 link dark-gray hover-blue mr3 mr4-l ttu" href="{% url 'kids' %}">Kids Church</a>
 				</div>
-				<div class="flex pa3 items-center transition-transform dn-l hamburger pointer">
+				<div class="flex pa1 items-center transition-transform dn-l hamburger pointer">
 					<a class="f4 link dib black mr3 mr4-ns" href="#"><img src="{% static 'img/hamburger.svg' %}" class="dib" style="max-width: 50%; outline: none;"></a>
 				</div>
 			</nav>
@@ -42,20 +42,21 @@
 				<div class="db dib-l w-50-l">
 					<span class="db dib-m mb3">&copy; 2019 GHBC. All rights reserved.</span>
 					<span class="br b-black-20 pa2">
-						<a href="" class="link blue f6 fw1">Privacy Policy</a>
+						<a href="{% url 'privacy' %}" class="link blue f6 fw1">Privacy Policy</a>
 					</span>
 					<span class="pa2">
 						<a href="" class="link blue f6 fw1">Terms of Use</a>
 					</span>
-				</div><div class="dn db-m dib-l w-50-l">
-					<div class="pv2">
+				</div><div class="db-m dib-l w-50-l">
+					<div class="dn db-ns pv2">
 						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'media' %}">media</a>
 						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'give' %}">give</a>
 						<a class="pa2 pa0-l f6 fw3 link blue dim mr2 ttu" href="{% url 'wwa' %}">who we are</a>
 					</div>
 					<div>
 						Follow us on<br />
-						<a class="link dim white dib h2 w2 br-100 mr3 pa2 bg-blue ba b--black-10" href="#" title="">
+						<a class="link dim white dib h2 w2 br-100 mr3 pa2 bg-blue ba b--black-10" 
+						href="https://web.facebook.com/pg/GHBCCalabar" title="">
 							<svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
 							  <title>facebook icon</title>
 							  <path d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z"></path>

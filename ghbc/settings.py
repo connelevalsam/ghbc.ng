@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '54#sfdb&x0jd&24k^yap81+v+shspj*&$6zta!bwvgvmkq8+gp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ghbc.ng', 'www.ghbc.ng']
 
 
 # Application definition

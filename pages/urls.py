@@ -22,5 +22,6 @@ urlpatterns = [
     path('kids-messages-_a/', views.kids_stry2, name='kidstry2'),
     path('kids-messages_b/', views.kids_stry3, name='kidstry3'),
     path('kids-messages_c/', views.kids_stry4, name='kidstry4'),
+    path('privacy/', views.privacy, name='privacy'),
     path('coming-soon/', views.coming_soon, name='cs'),
 ]

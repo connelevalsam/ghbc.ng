@@ -66,11 +66,13 @@ body {
     flex-direction: column;
 } .media div {flex: 1;} .media article {flex: 1; align-items: center;}
 
+.fx1 {flex: 1;} .fx2 {flex: 2;}
 .contact {
     display: flex;
     flex-direction: row;
-} .contact>div {flex: 1;} .contact>article {flex: 2;}
+} .contact>article {flex: 1; align-items: center;}
 
+._2p3a {width: 100% !important;}
 .transition-transform { 
     transition: transform 0.5s ease-in;
 }

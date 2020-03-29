@@ -69,5 +69,8 @@ def kids_stry3(request):
 def kids_stry4(request):
     return render(request, 'kids_stry4.html')
 
+def privacy(request):
+    return render(request, 'privacy-policy.html')
+
 def coming_soon(request):
     return render(request, 'comingsoon.html')
